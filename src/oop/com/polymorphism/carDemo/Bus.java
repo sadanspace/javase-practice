@@ -17,8 +17,10 @@ public class Bus extends MotoVehicle{
     @Override
     final public int calcRent(int days){
         if (this.seatCount > 16) {
+            System.out.println("16座以上的价格：" + days*1500);
             return days*1500;
         }else{
+            System.out.println("16座以下的价格：" + days*800);
             return days*800;
         }
     }
