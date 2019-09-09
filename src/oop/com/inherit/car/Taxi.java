@@ -1,4 +1,4 @@
-package car;
+package oop.com.inherit.car;
 
 public class Taxi extends Car{
     private String company;

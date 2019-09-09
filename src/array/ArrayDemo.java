@@ -1,4 +1,6 @@
+package src.array;
 import java.util.Scanner;
+
 
 public class ArrayDemo {
     public static void main (String[] args){
@@ -7,7 +9,7 @@ public class ArrayDemo {
 	    System.out.print(arr[i] + "\t");
 	}
 	System.out.println();
-	
+
 	int sum=0;
 	for(int i=0;i<arr.length;i++){
 	    sum += arr[i];

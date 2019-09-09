@@ -1,3 +1,5 @@
+package oop.com.inherit.car;
+
 public class FamilyCar{
     private String shape;
     private String licensePlate;
