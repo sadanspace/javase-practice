@@ -27,21 +27,14 @@ package src.oop.com.polymorphism.carDemo;
 
 public class Test {
     public static void main(String[] args) {
-        MotoVehicle c1 = new Car("c1", "宝马", "550i");
-        MotoVehicle c2 = new Car("c2", "宝马", "550i");
-        MotoVehicle c3 = new Car("c3", "别克商务", "航GL8");
-        MotoVehicle b1 = new Bus("bb1", "金龙",34);
-
-
-//        int c1Price = c1.calcRent(2);
-//        int b1Price = b1.calcRent(3);
+        MotoVehicle[] motos = new MotoVehicle[4];
+        motos[0] = new Car("c1", "宝马", "550i");
+        motos[1] = new Car("c2", "宝马", "550i");
+        motos[2] = new Car("c3", "别克商务", "航GL8");
+        motos[3] = new Bus("bb1", "金龙",34);
         Calc calc = new Calc();
-        int sumPrice = calc.calcPriceByMotoVehicle(c1, 5 ) + calc.calcPriceByMotoVehicle(c2, 5 ) +
-                calc.calcPriceByMotoVehicle(c3, 5 ) + calc.calcPriceByMotoVehicle(b1, 5 );
+        int sum = calc.calcTotalRent(motos, 5);
+        System.out.println("总租金为：" + sum);
 
-        System.out.println("总租金为：" + sumPrice);
-
-//        System.out.println(c1Price);
-//        System.out.println(b1Price);
         }
     }
