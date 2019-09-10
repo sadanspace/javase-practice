@@ -21,17 +21,22 @@
     - 1辆别克商务
     - 1辆金龙（34）座
     - 租金5天共多少钱？
+
+练习三:
+- 新购置了卡车，根据吨位，租金每天每吨50
+- 计算现有总租金
 */
 
 package src.oop.com.polymorphism.carDemo;
 
 public class Test {
     public static void main(String[] args) {
-        MotoVehicle[] motos = new MotoVehicle[4];
+        MotoVehicle[] motos = new MotoVehicle[5];
         motos[0] = new Car("c1", "宝马", "550i");
         motos[1] = new Car("c2", "宝马", "550i");
         motos[2] = new Car("c3", "别克商务", "航GL8");
         motos[3] = new Bus("bb1", "金龙",34);
+        motos[4] = new Truck("t1", "大卡车", 4);
         Calc calc = new Calc();
         int sum = calc.calcTotalRent(motos, 5);
         System.out.println("总租金为：" + sum);
