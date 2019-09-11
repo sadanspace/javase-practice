@@ -40,9 +40,9 @@ public class Test {
         intelligentPhone.call();
         intelligentPhone.sendMessage();
         intelligentPhone.conn();
-        intelligentPhone.play();
         intelligentPhone.take();
-        intelligentPhone.play("视频");
+        intelligentPhone.play("video");
+        intelligentPhone.play("audio");
 
     }
 }

@@ -1,11 +1,6 @@
 package src.oop.com.interface_demo;
 
-public class IntelligentPhone extends Phone implements Audio,ConnNetwork,Photograph, Video {
-    @Override
-    public void play(){
-        System.out.println("播放音频");
-    }
-
+public class IntelligentPhone extends Phone implements ConnNetwork,Photograph,PlayWiring {
     @Override
     public void conn(){
         System.out.println("上网");
@@ -18,8 +13,12 @@ public class IntelligentPhone extends Phone implements Audio,ConnNetwork,Photogr
 
     // 同一个类中，不能重写相同的成员方法
     @Override
-    public void play(String s){
-        System.out.println("播放音频");
+    public void play(String content){
+        if (content.equals("audio")) {
+            System.out.println("播放音频");
+        }else if(content.equals("video")){
+            System.out.println("播放视频");
+        }
     }
 
 
