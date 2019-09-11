@@ -19,20 +19,30 @@
 拍照，已存储
 插入钥匙，解锁
 用力推，门开了
+
+练习四：
+
+原始的手机，可以发短信、打电话。
+随着发展，手机增加了功能：音频、视频播放、拍照、上网
+
+
  */
 
 package src.oop.com.interface_demo;
 
 public class Test {
     public static void main(String[] args){
-        Lock lock = new SecurityDoor();
-        Door door = new SecurityDoor();
-        DoorBell doorBell = new SecurityDoor();
-        door.close();
-        lock.Lock();
-        doorBell.photograph();
-        lock.UnLock();
-        door.open();
+        GeneralPhone generalPhone = new GeneralPhone();
+        IntelligentPhone intelligentPhone = new IntelligentPhone();
+        generalPhone.call();
+        generalPhone.sendMessage();
+
+        intelligentPhone.call();
+        intelligentPhone.sendMessage();
+        intelligentPhone.conn();
+        intelligentPhone.play();
+        intelligentPhone.take();
+        intelligentPhone.play("视频");
 
     }
 }
