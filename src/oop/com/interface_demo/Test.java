@@ -26,23 +26,31 @@
 随着发展，手机增加了功能：音频、视频播放、拍照、上网
 
 
+练习五：
+
+采用面向接口编程思想组装一台计算机
+计算机的主要组成部分有：
+- CPU
+- 内存
+- 硬盘
+
+显示如下结果：
+计算机信息如下：
+CPU品牌是：Intel ,主频是：33
+硬盘容量是：512
+内存容量是：4
+
  */
 
 package src.oop.com.interface_demo;
 
 public class Test {
     public static void main(String[] args){
-        GeneralPhone generalPhone = new GeneralPhone();
-        IntelligentPhone intelligentPhone = new IntelligentPhone();
-        generalPhone.call();
-        generalPhone.sendMessage();
-
-        intelligentPhone.call();
-        intelligentPhone.sendMessage();
-        intelligentPhone.conn();
-        intelligentPhone.take();
-        intelligentPhone.play("video");
-        intelligentPhone.play("audio");
+      Computer c = new Computer();
+      c.count();
+      c.permanentStorage();
+      c.tmpStorage();
+      c.info();
 
     }
 }
