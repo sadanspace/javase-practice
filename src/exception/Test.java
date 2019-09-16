@@ -19,7 +19,7 @@ public class Test {
             }
             System.out.println("finally");
             num = 100;
-            return num;
         }
+        return num;
     }
 }
