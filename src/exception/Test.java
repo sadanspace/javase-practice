@@ -18,9 +18,8 @@ public class Test {
                 System.out.println("num > 20: " + num);
             }
             System.out.println("finally");
-
+            num = 100;
+            return num;
         }
-        System.out.println("out");
-        return num;
     }
 }
