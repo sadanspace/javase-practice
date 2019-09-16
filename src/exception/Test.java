@@ -2,24 +2,30 @@ package src.exception;
 
 public class Test {
     public static void main(String[] args) {
-        System.out.println(test());
+        System.out.println(test().num);
 
     }
 
-    static public int test(){
-        int num = 10;
+    static public Num test(){
+        Num number = new Num();
         try {
             System.out.println("try");
-            return num += 80;  // 等效于 num+=80;return num
+            return number;
         } catch (Exception e){
             System.out.println("Exception");
         } finally {
-            if (num > 20) {
-                System.out.println("num > 20: " + num);
+            if (number.num > 20) {
+                System.out.println("num > 20: " + number.num);
             }
             System.out.println("finally");
-            num = 100;
+            number.num = 100;
         }
-        return num;
+        System.out.println("out");
+        return number;
     }
+}
+
+
+class Num {
+    public int num = 10;
 }
