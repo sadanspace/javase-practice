@@ -7,10 +7,6 @@ import java.io.InputStream;
 
 public class InputStreamDemo {
     public static void main(String[] args) {
-        // 为什么要关闭流资源？
-        /*
-            每个进程所能使用的文件资源是有限的
-         */
 
         String filePath = "src/StreamDemo/input.txt";
 
