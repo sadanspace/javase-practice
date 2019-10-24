@@ -1,4 +1,4 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
 /**
  * First implementation Thread

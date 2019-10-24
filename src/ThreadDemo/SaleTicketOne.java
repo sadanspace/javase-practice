@@ -1,4 +1,4 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
 import java.util.ArrayList;
 import java.util.List;

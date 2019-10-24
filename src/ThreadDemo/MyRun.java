@@ -1,4 +1,4 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
 public class MyRun implements Runnable {
     @Override

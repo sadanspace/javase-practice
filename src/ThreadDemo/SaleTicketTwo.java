@@ -1,8 +1,14 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
+/**
+ * 存在问题：
+ * 1. 票号的不是逐个递减，应该卖我第5张，才是4张
+ * 2. 有时会出现多买一张票，线程不同步造成的问题
+ */
 public class SaleTicketTwo implements Runnable {
     private int tickets = 5;
 

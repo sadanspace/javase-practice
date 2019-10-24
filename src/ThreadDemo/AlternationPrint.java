@@ -1,4 +1,4 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
 public class AlternationPrint {
     public static void main(String[] args) {

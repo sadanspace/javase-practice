@@ -1,15 +1,15 @@
-package src.TreadDemo;
+package src.ThreadDemo;
 
-public class SleepTest {
+public class JoinTest {
     public static void main(String[] args) {
         MyRun myRun = new MyRun();
         Thread thread = new Thread(myRun);
         thread.start();
         for(int i=0;i<5;i++){
-            System.out.println(Thread.currentThread().getName()+"------"+i);
+            System.out.println(Thread.currentThread().getName()+"-----"+i);
             if(i==3){
                 try {
-                    Thread.sleep(1);
+                    thread.join();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
